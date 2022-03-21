@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <section class="main">
+
+        <!-- The Todo Table -->
+        <table>
+            <thead>
+            <th>#</th>
+            <th>Todo</th>
+            <th>Operation</th>
+        </thead>
+        <tbody id="table">
+        </tbody>
+    </table>
+        <!-- END The Todo Table -->
+
+        <!-- Separator -->
+        <div class="separator">
+        </div>
+        <!-- END Separator -->
+
+        <!-- The Todo Form -->
+        <div class="todo-form">
+            <div class="form-title">
+                <h4>Add a Todo item</h4>
+            </div>
+            <div class="form-content">
+                <label for="item-name">Item Name :</label>
+                <input onchange="getItemName()" id="item-name" type="text" name="item-name">
+            </div>
+            <div class="form-submit">
+                <button onclick="addItem()" type="submit">Add</button>
+            </div>
+        </div>
+        <!-- END The Todo Form -->
+</section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
